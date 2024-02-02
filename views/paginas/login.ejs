@@ -1,0 +1,24 @@
+<%- include("../templates/encabezado") %>
+<%- include("../templates/menu") %>
+
+<div class="container mt-5">
+    <form action="/login" method="post">
+        <div class="card">
+            <div class="card-header">
+                <h1>Inicio de Sesión</h1>
+            </div>
+            <div class="card-body">
+                <input class="form-control mb-3" type="text" name="usuario" id="usuario" placeholder="Usuario" autofocus>
+                <input class="form-control mb-3" type="text" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="card-footer">
+                <button class="form-control btn btn-primary" type="submit">Iniciar</button>
+            </div>
+            <div class="card-header mb-3">
+                <a href="/registro" class="form-control btn btn-success">Registrarse</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<%- include("../templates/pie") %>
